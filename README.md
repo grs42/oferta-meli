@@ -1,28 +1,33 @@
 # Oferta MeLi
 
-Skill em português para orientar a geração de dez imagens de anúncios de produtos individuais e kits para o Mercado Livre Brasil.
+Três skills em português para preparar anúncios de produtos e kits no Mercado Livre Brasil.
 
-## O que faz
+## O que vem no repositório
 
-- Imagens 01–06: capa, benefícios e escala, uso principal, detalhes, comparação factual e outra aplicação.
-- Imagens 07–10: aprofundamentos úteis, priorizando componentes em uso nos kits.
-- Artes de 1200 × 1200, fotografia dominante, fundos controlados e textos curtos.
-- Sem encerramento obrigatório ou repetição apenas para completar a galeria.
+| Skill | Entrega | Onde baixar |
+| --- | --- | --- |
+| `oferta-meli` | Galeria de 10 imagens quadradas de 1200 × 1200 px. Inclui capa, benefícios e escala, uso principal, detalhes, comparação factual e outra aplicação. As imagens 07–10 aprofundam detalhes ou mostram componentes do kit em uso. | [`SKILL.md`](SKILL.md) e [`agents/`](agents/) na raiz |
+| `meli-title-optimizer` | Um título factual, sem marca, de 58 a 60 caracteres, baseado na linguagem de busca do Mercado Livre Brasil. | [Pacote de título e descrição](./skills-meli.zip?raw=true) |
+| `meli-description` | Descrição comercial factual de 1.200 a 1.500 caracteres. Quando solicitado, salva o texto em `Descrição.txt`. | [Pacote de título e descrição](./skills-meli.zip?raw=true) |
 
-## Download e uso
+O pacote inclui as duas pastas completas, com os scripts, testes e material de apoio do otimizador de títulos.
 
-Baixe em **Code → Download ZIP** ou clone este repositório. Mantenha `SKILL.md` e a pasta `agents` juntos em uma pasta chamada `oferta-meli`, no diretório de skills aceito pela sua ferramenta.
+## Instalação
 
-Em um ambiente compatível, invoque `$oferta-meli` e forneça fotos reais do produto, conteúdo exato da oferta e especificações confirmadas. É necessário que o ambiente tenha uma ferramenta de geração e edição de imagens; estes arquivos são instruções, não um gerador independente.
+1. Baixe o repositório pelo menu **Code → Download ZIP** ou clone-o. Para instalar a skill de imagens, reúna `SKILL.md` e `agents/` em uma pasta chamada `oferta-meli`.
+2. Extraia `skills-meli.zip` e mantenha as pastas `meli-title-optimizer` e `meli-description` com seus arquivos internos.
+3. Coloque as pastas das skills que deseja usar no diretório de skills do seu ambiente. Para uso em um projeto Codex, use `.agents/skills/` na raiz do projeto.
 
-## Referência visual local
+## Como usar
 
-O contrato original em `SKILL.md` aponta para a galeria `Produtos/Alicate Universal 8 Isolado 1000V Aço Cr-V para Eletricista/`. Essa galeria **não está incluída** neste repositório. Para reproduzir a referência visual original, ela precisa ser fornecida separadamente. Não trate essa dependência como disponível após baixar apenas a skill.
+- **Imagens** — “Use `$oferta-meli` para criar a galeria deste kit com base nas fotos anexadas e na lista de itens inclusos.” Requer uma ferramenta de geração e edição de imagens.
+- **Título** — “Use `$meli-title-optimizer` para criar o título deste anúncio. Seguem o produto, as características confirmadas e os termos de busca.” Requer acesso à pesquisa na web.
+- **Descrição** — “Use `$meli-description` para escrever a descrição deste anúncio com os benefícios confirmados, a ficha técnica e os itens inclusos. Salve em `Descrição.txt`.”
 
-As regras textuais de tipografia estão descritas na própria skill. Qualquer adaptação para outra referência deve ser explícita; não presumir acesso às imagens originais.
+Para preparar o anúncio completo, peça as três entregas no mesmo pedido e indique os dados confirmados e as fotos reais do produto.
 
-## Limites
+## Referência visual e revisão
 
-Confira fidelidade ao produto, contagem de peças, textos, encaixes e mecânica antes de publicar. Não invente certificações, garantias, avaliações, medidas ou vantagens comparativas. A skill não garante aprovação do anúncio pela plataforma.
+A galeria de tipografia citada no `SKILL.md` pertence ao projeto original e é fornecida à parte. Você pode anexar sua própria referência de estilo e indicar que ela deve ser usada.
 
-Este repositório contém apenas as instruções da skill e seus metadados, sem fotos de produtos, credenciais ou dados comerciais do projeto de origem.
+Antes de publicar, confira modelo, quantidade, dimensões, textos e encaixes. Use apenas características e vantagens demonstráveis.
