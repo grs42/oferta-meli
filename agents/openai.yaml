@@ -1,0 +1,6 @@
+interface:
+  display_name: "Oferta MeLi"
+  short_description: "Galeria MeLi com dez imagens e cobertura de kits"
+  default_prompt: "Use $oferta-meli para gerar dez imagens 1200x1200 seguindo exclusivamente o contrato visual da skill, com posições 1–6 definidas e quatro aprofundamentos específicos nas posições 7–10, priorizando componentes em uso nos kits, sem repetição nem encerramento obrigatório."
+policy:
+  allow_implicit_invocation: true
